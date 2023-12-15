@@ -32,9 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.departureDate = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numberPeople = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numberNight = new System.Windows.Forms.NumericUpDown();
+            this.bookButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numberPeople)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numberNight)).BeginInit();
             this.SuspendLayout();
             // 
             // arrivalDate
@@ -69,12 +74,12 @@
             this.departureDate.Size = new System.Drawing.Size(200, 20);
             this.departureDate.TabIndex = 3;
             // 
-            // numericUpDown1
+            // numberPeople
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(214, 98);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 4;
+            this.numberPeople.Location = new System.Drawing.Point(214, 98);
+            this.numberPeople.Name = "numberPeople";
+            this.numberPeople.Size = new System.Drawing.Size(120, 20);
+            this.numberPeople.TabIndex = 4;
             // 
             // label3
             // 
@@ -85,20 +90,61 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Nombre de personne";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(36, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Nombre de Nuit";
+            // 
+            // numberNight
+            // 
+            this.numberNight.Location = new System.Drawing.Point(214, 135);
+            this.numberNight.Name = "numberNight";
+            this.numberNight.Size = new System.Drawing.Size(120, 20);
+            this.numberNight.TabIndex = 7;
+            // 
+            // bookButton
+            // 
+            this.bookButton.Location = new System.Drawing.Point(42, 451);
+            this.bookButton.Name = "bookButton";
+            this.bookButton.Size = new System.Drawing.Size(75, 23);
+            this.bookButton.TabIndex = 8;
+            this.bookButton.Text = "Reserver";
+            this.bookButton.UseVisualStyleBackColor = true;
+            this.bookButton.Click += new System.EventHandler(this.bookButton_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(167, 37);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(78, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "MVCBossHotel";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 533);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.bookButton);
+            this.Controls.Add(this.numberNight);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numberPeople);
             this.Controls.Add(this.departureDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.arrivalDate);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numberPeople)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numberNight)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,8 +156,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker departureDate;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numberPeople;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown numberNight;
+        private System.Windows.Forms.Button bookButton;
+        private System.Windows.Forms.Label label5;
     }
 }
 
