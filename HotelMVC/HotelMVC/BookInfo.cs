@@ -13,5 +13,9 @@ namespace HotelMVC
         private DateTime _dateDepart;
         private DateTime _dateArrivee;
 
+        public int NumberPerson { get => _numberPerson; set => _numberPerson = value; }
+        public int NumberNight { get => _numberNight; set => _numberNight = value; }
+        public DateTime DateDepart { get => _dateDepart; set => _dateDepart = value; }
+        public DateTime DateArrivee { get => _dateArrivee; set => _dateArrivee = value; }
     }
 }

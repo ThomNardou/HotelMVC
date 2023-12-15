@@ -13,5 +13,10 @@ namespace HotelMVC
 
         public Model Model { get => _model; set => _model = value; }
         public Form1 View { get => _view; set => _view = value; }
+
+        public void processBooking(BookInfo bi)
+        {
+            Model.processBooking(bi);
+        }
     }
 }

@@ -11,5 +11,10 @@ namespace HotelMVC
         private Controller _controller;
 
         public Controller Controller { get => _controller; set => _controller = value; }
+
+        public void processBooking(BookInfo bi)
+        {
+
+        }
     }
 }

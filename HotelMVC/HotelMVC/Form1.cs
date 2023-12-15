@@ -22,6 +22,13 @@ namespace HotelMVC
 
         private void bookButton_Click(object sender, EventArgs e)
         {
+            BookInfo bookInfo = new BookInfo();
+            bookInfo.NumberNight = (int)this.numberNight.Value;
+            bookInfo.NumberPerson = (int)this.numberPeople.Value;
+            bookInfo.DateArrivee = (DateTime)this.arrivalDate.Value;
+            bookInfo.DateDepart = (DateTime)this.departureDate.Value;
+
+            Controller.processBooking(bookInfo);
         }
 
         public void DissplaySuccess(string message)
