@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text.JSON;
+using System.Text.Json;
 
 namespace HotelMVC
 {
@@ -18,7 +18,7 @@ namespace HotelMVC
         {
             if (bi.NumberNight > 0 && bi.NumberNight <= 7)
             {
-                File.WriteAllText("BookInfo.txt", )
+                File.WriteAllText("BookInfo.txt", JsonSerializer.Serialize(bi));
                 return true;
             }
             else

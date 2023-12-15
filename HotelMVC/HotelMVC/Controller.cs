@@ -16,7 +16,14 @@ namespace HotelMVC
 
         public void processBooking(BookInfo bi)
         {
-            Model.processBooking(bi);
+            if (Model.processBooking(bi))
+            {
+                View.DissplaySuccess("Success");
+            }
+            else
+            {
+                View.DissplayError("Error");
+            }
         }
     }
 }

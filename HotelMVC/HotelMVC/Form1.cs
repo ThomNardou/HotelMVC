@@ -28,7 +28,7 @@ namespace HotelMVC
             bookInfo.DateArrivee = (DateTime)this.arrivalDate.Value;
             bookInfo.DateDepart = (DateTime)this.departureDate.Value;
 
-            Controller.processBooking(bookInfo);
+            this.Controller.processBooking(bookInfo);
         }
 
         public void DissplaySuccess(string message)
