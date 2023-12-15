@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace HotelMVC
 {
-    internal class Controller
+    public class Controller
     {
+        Model _model;
+        Form1 _view;
+
+        public Model Model { get => _model; set => _model = value; }
+        public Form1 View { get => _view; set => _view = value; }
     }
 }
